@@ -1,4 +1,4 @@
-# 📊 [Nome do Projeto]
+# 📊 [Modelo IMDB Preditivo]
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -10,7 +10,7 @@ Uma descrição mais detalhada sobre o projeto, o problema que ele resolve, sua 
 
 ## 📖 Índice
 
-- [📊 \[Nome do Projeto\]](#-nome-do-projeto)
+- [📊 \[Modelo IMDB Preditivo\]](#-modelo-imdb-preditivo)
   - [📖 Índice](#-índice)
   - [🎯 Sobre o Projeto](#-sobre-o-projeto)
   - [🗂️ Conjunto de Dados (Dataset)](#️-conjunto-de-dados-dataset)
@@ -76,22 +76,22 @@ Certifique-se de ter o Python e o pip instalados em sua máquina.
 
 1.  Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    git clone https://github.com/seu-usuario/Modelo-Preditivo-IMDB.git
     ```
 2.  Navegue até o diretório do projeto:
     ```bash
-    cd nome-do-repositorio
+    cd Modelo-Preditivo-IMDB
     ```
 3.  (Recomendado) Crie e ative um ambiente virtual:
     ```bash
     python -m venv venv
-    source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
+    venv\Scripts\activate  # No Linux, use `source venv/bin/activate`
     ```
 4.  Instale as dependências:
     ```bash
     pip install -r requirements.txt
     ```
-    *(**Nota**: Se você não tiver um arquivo `requirements.txt`, pode listar as bibliotecas aqui e o comando `pip install pandas numpy...`)*
+    
 
 ### Execução
 
@@ -99,7 +99,7 @@ Certifique-se de ter o Python e o pip instalados em sua máquina.
     ```bash
     jupyter notebook
     ```
-2.  Abra o arquivo `nome_do_seu_notebook.ipynb` e execute as células sequencialmente.
+2.  Abra o arquivo `story.ipynb` e execute as células sequencialmente.
 
 ---
 
@@ -145,6 +145,7 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 ## 📬 Contato
 
-Seu Nome – seu-email@exemplo.com
+Seu Nome – leo.micaias@gmail.com
 
-Link do Projeto: https://github.com/seu-usuario/nome-do-repositorio
+Link do Projeto: https://github.com/micaiasviola/Modelo-Preditivo-IMDB
+
