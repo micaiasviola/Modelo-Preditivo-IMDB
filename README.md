@@ -1,11 +1,5 @@
 # 📊 [Modelo IMDB Preditivo]
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-
-> Breve descrição de uma linha sobre o seu projeto.
-
-Uma descrição mais detalhada sobre o projeto, o problema que ele resolve, sua motivação e o objetivo principal. Explique o contexto e por que este projeto é útil.
-
 ---
 
 ## 📖 Índice
@@ -13,7 +7,6 @@ Uma descrição mais detalhada sobre o projeto, o problema que ele resolve, sua 
 - [📊 \[Modelo IMDB Preditivo\]](#-modelo-imdb-preditivo)
   - [📖 Índice](#-índice)
   - [🎯 Sobre o Projeto](#-sobre-o-projeto)
-  - [🗂️ Conjunto de Dados (Dataset)](#️-conjunto-de-dados-dataset)
   - [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
   - [🚀 Como Usar](#-como-usar)
     - [Pré-requisitos](#pré-requisitos)
@@ -21,35 +14,25 @@ Uma descrição mais detalhada sobre o projeto, o problema que ele resolve, sua 
     - [Execução](#execução)
   - [📂 Estrutura do Notebook](#-estrutura-do-notebook)
   - [📈 Resultados](#-resultados)
-  - [🤝 Como Contribuir](#-como-contribuir)
-  - [📄 Licença](#-licença)
   - [📬 Contato](#-contato)
 
 ---
 
 ## 🎯 Sobre o Projeto
 
-Aqui você pode detalhar mais sobre a análise ou modelo criado.
+Esse é um projeto de ciência de dados para uma empresa de Hollywood. Através da análise de um banco de dados de filmes, o objetivo é criar modelos para identificar quais os principais fatores estão relacionados com o sucesso de um filme.
 
-*   **Problema**: Qual pergunta de negócio ou problema você está tentando responder/resolver?
-*   **Objetivo**: Qual era o objetivo final? (ex: "Criar um modelo de classificação com acurácia acima de 90%", "Realizar uma análise exploratória para encontrar insights sobre o comportamento do cliente").
-*   **Metodologia**: Descreva brevemente as etapas que você seguiu.
-
----
-
-## 🗂️ Conjunto de Dados (Dataset)
-
-Descreva o conjunto de dados utilizado na análise.
-
-*   **Fonte**: De onde os dados foram obtidos? (ex: Kaggle, UCI Machine Learning Repository, API de uma empresa, etc.). Adicione o link se possível.
-*   **Descrição**: O que os dados representam? Quais são as principais características (features)?
-*   **Período**: Se for uma série temporal, qual o período coberto pelos dados?
+*   **Problema**: Qual o proximo tipo de filme a ser desenvolvido?
+*   **Objetivo**: Criar um modelo capaz de prever a nota do IMDB de um filme com base em suas características.
+*   **Metodologia**: Análise exploratória dos dados e criação de modelos de Machine Learning.
 
 ---
+
 
 ## 🛠️ Tecnologias Utilizadas
 
-Liste as principais bibliotecas, frameworks e ferramentas que você utilizou.
+Bibliotecas e frameworks utilizadas neste projeto
+
 
 *   [Python](https://www.python.org/)
 *   [Pandas](https://pandas.pydata.org/)
@@ -63,7 +46,7 @@ Liste as principais bibliotecas, frameworks e ferramentas que você utilizou.
 
 ## 🚀 Como Usar
 
-Instruções sobre como um usuário pode rodar seu notebook localmente.
+Instruções sobre como você pode rodar seu notebook localmente.
 
 ### Pré-requisitos
 
@@ -91,8 +74,16 @@ Certifique-se de ter o Python e o pip instalados em sua máquina.
     ```bash
     pip install -r requirements.txt
     ```
+5. Rodes esses comandos uma vez apenas:
+    ```bash
+    %pip install nltk #(rodar uma vez para instalar o nltk)
     
-
+    nltk.download('stopwords')# (rodar uma vez para baixar as stopwords)
+    nltk.download('punkt') # (rodar uma vez para baixar o tokenizer)
+    nltk.download('wordnet') # (rodar uma vez para baixar o lemmatizer)
+    nltk.download('punkt_tab')(rodar uma vez para baixar o tokenizer)
+    ```
+    
 ### Execução
 
 1.  Inicie o Jupyter Notebook:
@@ -119,33 +110,16 @@ O notebook está dividido nas seguintes seções:
 
 ## 📈 Resultados
 
-Apresente um resumo dos principais resultados e conclusões da sua análise ou do modelo.
-*   O modelo de Regressão Logística alcançou uma acurácia de **92%** no conjunto de teste.
-*   A análise exploratória revelou uma forte correlação entre a variável X e a variável Y.
-
----
-
-## 🤝 Como Contribuir
-
-Contribuições são o que tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
-
-1.  Faça um *Fork* do projeto
-2.  Crie uma *Branch* para sua feature (`git checkout -b feature/AmazingFeature`)
-3.  Faça o *Commit* de suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4.  Faça o *Push* da *Branch* (`git push origin feature/AmazingFeature`)
-5.  Abra um *Pull Request*
-
----
-
-## 📄 Licença
-
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+*   A analise exploratoria dos dados revelou uma forte correlação entre as variaveis Gross e No_of_Votes, indicando que a popularidade de um filme esta ligada ao seu faturamento.
+*   O modelo de regressão nos mostra que a nota do IMDB esta fortemente relacionada com a Meta_Score e o No_of_votes, indicando que a popularidade é um ponto chave para o sucesso de um filme
+*   Problemas de classificação de gênero: para prever o genero de um filme utilizei tecnicas de NLP e um classificador. O modelo de regressão logística nos retornou uma taxa de 99% de precisão no conjunto de teste, provando que é possivel inferir o genero de um filme à partir de sua sinópse.
+*   Problema de previsão de nota do IMDB: Optei por utilizar o modelo RandomForest Regressor para prever a nota do IMDB que é um problema de regressão, a performance do modelo foi avaliada com base na métrica MAE e obtive um resultado de 0.21, que significa que em média as previsões ficam a 0.21 pontos de seu resultado real.
 
 ---
 
 ## 📬 Contato
 
-Seu Nome – leo.micaias@gmail.com
+Micaías Viola – leo.micaias@gmail.com
 
-Link do Projeto: https://github.com/micaiasviola/Modelo-Preditivo-IMDB
+Modelo-Preditivo_IMBD: https://github.com/micaiasviola/Modelo-Preditivo-IMDB
 
