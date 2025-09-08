@@ -74,10 +74,8 @@ Certifique-se de ter o Python e o pip instalados em sua máquina.
     ```bash
     pip install -r requirements.txt
     ```
-5. Rodes esses comandos uma vez apenas:
-    ```bash
-    %pip install nltk #(rodar uma vez para instalar o nltk)
-    
+5. descomente as celulas no inicio de story.ipynb que contem esses comando abaixo e rode apenas uma vez:
+    ```bash    
     nltk.download('stopwords')# (rodar uma vez para baixar as stopwords)
     nltk.download('punkt') # (rodar uma vez para baixar o tokenizer)
     nltk.download('wordnet') # (rodar uma vez para baixar o lemmatizer)
