@@ -59,7 +59,7 @@ Certifique-se de ter o Python e o pip instalados em sua máquina.
 
 1.  Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/Modelo-Preditivo-IMDB.git
+    git clone https://github.com/micaiasviola/Modelo-Preditivo-IMDB.git
     ```
 2.  Navegue até o diretório do projeto:
     ```bash
