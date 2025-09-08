@@ -1,10 +1,10 @@
-# 📊 [Modelo IMDB Preditivo]
+# 📊 Modelo IMDB Preditivo
 
 ---
 
 ## 📖 Índice
 
-- [📊 \[Modelo IMDB Preditivo\]](#-modelo-imdb-preditivo)
+- [📊 Modelo IMDB Preditivo](#-modelo-imdb-preditivo)
   - [📖 Índice](#-índice)
   - [🎯 Sobre o Projeto](#-sobre-o-projeto)
   - [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
