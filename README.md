@@ -76,10 +76,10 @@ Certifique-se de ter o Python e o pip instalados em sua máquina.
     ```
 5. descomente as celulas no inicio de story.ipynb que contem esses comando abaixo e rode apenas uma vez:
     ```bash    
-    nltk.download('stopwords')# (rodar uma vez para baixar as stopwords)
+    nltk.download('stopwords') # (rodar uma vez para baixar as stopwords)
     nltk.download('punkt') # (rodar uma vez para baixar o tokenizer)
     nltk.download('wordnet') # (rodar uma vez para baixar o lemmatizer)
-    nltk.download('punkt_tab')(rodar uma vez para baixar o tokenizer)
+    nltk.download('punkt_tab') #(rodar uma vez para baixar o tokenizer)
     ```
     
 ### Execução
